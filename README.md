@@ -21,8 +21,8 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/netflix-speed-controller.git
-   cd netflix-speed-controller
+   git clone https://github.com/yafet-dev/Netflix-speed-controller.git
+   cd Netflix-speed-controller
    ```
 
 2. **Load the extension in Chrome**:
