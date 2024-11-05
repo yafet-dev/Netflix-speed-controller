@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 25rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.3rem;
+  background-color: #000;
+  color: #fff;
+}
+
+header > label {
+  font-size: 2rem;
+}
+
+.support {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#supported::before {
+  width: 2rem;
+  height: 2rem;
+}
+#supported.check::before {
+  content: "✅";
+}
+
+#supported.error::before {
+  content: "❌";
+}
+
+input[type="range"] {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#controls p {
+  flex-basis: 10%;
+  text-align: center;
+}
+
+#speed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label[for="plackbackSpeed"] {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#speed label[for="plackbackSpeed"]::before {
+  content: "x";
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  margin-bottom: 0.5rem;
+}
