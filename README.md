@@ -59,3 +59,38 @@ The `manifest.json` file configures the extension for Chrome:
   ]
 }
 ```
+
+## 📜 Usage
+
+1. **Open Netflix**: Start any video on Netflix.
+2. **Click the Extension Icon**: Adjust the speed using the popup’s buttons.
+3. **Choose Your Speed**: Available options include Normal (1x), Slow (0.5x), Fast (1.5x), and Faster (2x).
+
+## 📂 Project Structure
+
+```plaintext
+netflix-speed-controller/
+├── manifest.json         # Chrome extension configuration
+├── content.js            # Injects functionality into Netflix video player
+├── popup.html            # UI for the popup
+├── popup.js              # Controls for adjusting playback speed
+└── styles.css            # (Optional) Tailwind CSS for styling
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](../../issues/).
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+🎉 Enjoy faster, more flexible watching with **Netflix Speed Controller**!
