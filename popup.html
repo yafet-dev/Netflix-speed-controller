@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Netflix Speed Controller</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
+    <title>Netflix/Youtube Speed Controller</title>
+    <script defer src="popup.js"></script>
+    <!-- Using 'defer' to avoid inline script issues -->
   </head>
   <body>
-    <h3>Speed Control</h3>
-    <button onclick="setSpeed(1)">Normal</button>
-    <button onclick="setSpeed(1.5)">1.5x</button>
-    <button onclick="setSpeed(2)">2x</button>
-    <button onclick="setSpeed(0.5)">0.5x</button>
-
-    <script src="popup.js"></script>
+    <div>
+      <header>
+        <label>Video Speed</label>
+        <p>Supported: <span id="supported" class=""></span></p>
+      </header>
+      <main>
+        <div id="speed">
+          <label for="plackbackSpeed" id="speedLabel">1</label>
+        </div>
+        <div id="controls">
+          <p>0</p>
+          <input
+            id="plackbackSpeed"
+            type="range"
+            list="tickmarks"
+            step="0.1"
+            min="0"
+            max="2"
+            value="1"
+          />
+          <p>2</p>
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+          </datalist>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
