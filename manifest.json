@@ -4,9 +4,6 @@
   "version": "1.0",
   "description": "Control playback speed on Netflix",
   "permissions": ["activeTab", "scripting"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup.html"
   },
