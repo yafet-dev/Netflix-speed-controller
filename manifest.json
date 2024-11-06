@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Netflix Speed Controller",
+  "name": "Netflix/YouTube Speed Controller",
   "version": "1.0",
-  "description": "Control playback speed on Netflix",
-  "permissions": ["activeTab", "scripting"],
+  "description": "Control playback speed on Netflix and YouTube.",
+  "permissions": ["activeTab", "storage", "scripting"],
   "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.netflix.com/*"],
+      "matches": ["*://*.netflix.com/watch*", "*://*.youtube.com/watch*"],
       "js": ["content.js"]
     }
   ]
